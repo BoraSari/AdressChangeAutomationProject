@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="N11BrowserTestSuite">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2"></listener>
+    </listeners>
+    <test name="N11BBrowserTestWithGoogle">
+        <parameter name="browser" value="google"></parameter>
+        <classes>
+            <class name="N11Tests.N11LocationChangeTestAndSuggestionListTest"></class>
+        </classes>
+    </test>
+    <test name="N11BrowserTestWithFirefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="N11Tests.N11LocationChangeTestAndSuggestionListTest"></class>
+        </classes>
+    </test>
+    
+</suite>
+
+
